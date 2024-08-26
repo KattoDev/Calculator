@@ -29,10 +29,23 @@ public class Operations {
         return product;
     }
 
-    public static int Divide(int num1, int num2){
-        int product;
-        product = num1 / num2;
-        return product;
+    public static Double Divide(int num1, int num2){
+        return Double.valueOf(Integer.toString(num1))/Double.valueOf(Integer.toString(num2));
     }
 
+    public static int Pow(int num){
+        return (int) Math.pow(num, 2);
+    }
+
+    public static Double InvertOf(int num){
+        return (double) (1/num);
+    }
+
+    public static Double SquareRoot(int num){
+        return Math.sqrt(num);
+    }
+
+    public static Double Percent(int num){
+        return (double) num/100;
+    }
 }
